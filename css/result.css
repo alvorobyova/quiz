@@ -1,0 +1,43 @@
+.result {
+    padding: 140px 0 91px;
+    text-align: center;
+}
+
+.result .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.result-image {
+    position: absolute;
+    top: 85px;
+    z-index: -1;
+}
+
+.result-title {
+    max-width: 588px;
+    margin-bottom: 60px;
+}
+
+.result-score {
+    font-weight: 600;
+    font-size: 158px;
+    line-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*text-align: center;*/
+
+    color: #FFFFFF;
+    background: url("../img/result-image.png") center;
+    background-size: cover;
+    width: 480px;
+    height: 388px;
+}
+
+.watch-answers {
+    align-self: flex-end;
+    margin-top: 80px;
+}

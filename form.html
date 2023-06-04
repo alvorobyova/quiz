@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/itlogia.png" type="image/png" sizes="64x64">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+    </div>
+</header>
+
+<section class="form">
+    <div class="container">
+        <div class="form-content">
+            <h1 class="form-title common-title">Введите свои <span>данные</span></h1>
+            <div class="form-details">
+                <div class="form-group">
+                    <input type="text" class="form-input" name="" id="name" required autocomplete="off">
+                    <label for="name" class="form-label">Имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" name="" id="last-name" required autocomplete="off">
+                    <label for="last-name" class="form-label">Фамилия</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" name="" id="email" required autocomplete="off">
+                    <label for="email" class="form-label">Электронная почта</label>
+                </div>
+                <div class="form-agree">
+                    <input type="checkbox" name="" id="agree" required>
+                    <label for="agree">Я ознакомлен <a href="#">с правилами сайта</a></label>
+                </div>
+            </div>
+            <div class="form-action">
+                <button class="button" id="process" disabled>Перейти к выбору теста</button>
+            </div>
+        </div>
+        <div class="form-image">
+            <img src="img/info-image.png" alt="Персонаж с ноутбуком">
+        </div>
+    </div>
+</section>
+
+<footer class="footer">«АйтилогияQuiz» © Все права защищены / 2023</footer>
+
+<script src="scripts/form.js"></script>
+
+</body>
+</html>

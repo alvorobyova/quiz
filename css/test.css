@@ -1,0 +1,127 @@
+.test {
+    padding: 20px 0 76px;
+}
+
+
+.test-progress-bar {
+    margin: 60px 0 80px;
+    display: flex;
+}
+
+.test-progress-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.test-progress-bar-item:not(:first-child) {
+    margin-left: 130px;
+}
+
+.test-progress-bar-item:not(:last-child)::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 184px;
+    height: 6px;
+    left: 28px;
+    top: 10px;
+    background: #DCDCF3;
+}
+
+.test-progress-bar-item-circle {
+    width: 26px;
+    height: 26px;
+    background: #DCDCF3;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.test-progress-bar-item-text {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.test-progress-bar-item.complete:not(:last-child)::before {
+    background: #6933DC;
+}
+
+.test-progress-bar-item.complete .test-progress-bar-item-circle,
+.test-progress-bar-item.active .test-progress-bar-item-circle {
+    background: #6933DC;
+}
+
+.test-progress-bar-item.active::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    background: #DCDCF3;
+}
+
+.test-question-options {
+    min-height: 344px;
+}
+
+
+.test-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-time {
+    display: flex;
+    align-items: center;
+}
+
+.test-time-text {
+    font-size: 17px;
+    line-height: 20px;
+    color: #6933DC;
+    margin-right: 15px;
+}
+
+.test-time-clock {
+    background: url("../img/time.png") center;
+    background-size: cover;
+    width: 27px;
+    height: 29px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.pass-question {
+    margin-top: 10px;
+}
+
+.pass-question a.disabled {
+    color: #e2dfe7;
+    pointer-events: none;
+}
+
+#disabled-arrow {
+    display: none;
+}
+
+#enabled-arrow {
+    display: block;
+}
+
+.pass-question a.disabled #enabled-arrow {
+    display: none;
+}
+
+.pass-question a.disabled #disabled-arrow {
+    display: block;
+}
+
+
+
+
+
