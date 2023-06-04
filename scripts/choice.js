@@ -52,7 +52,7 @@
                     const choiceOptionArrowElement = document.createElement('div');
                     choiceOptionArrowElement.className = 'choice-option-arrow';
                     const choiceOptionImageElement = document.createElement('img');
-                    choiceOptionImageElement.setAttribute('src', 'img/arrow.png');
+                    choiceOptionImageElement.setAttribute('src', '../img/arrow.png');
                     choiceOptionImageElement.setAttribute('alt', 'Стрелка');
 
                     //перемещение объектов
